@@ -1,6 +1,12 @@
 node_modules/
+.venv/
+tmp/
+results/
+materials/
+tools/
 .env
 .DS_Store
 *.log
 dist/
 build/
+tmp_audio.*
