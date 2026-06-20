@@ -1,0 +1,13 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "command": {
+    "scrape": {
+      "description": "Scrape a web page and extract clean text content",
+      "prompt": "Run node scripts/web-scrape.mjs <url> to scrape the given URL"
+    },
+    "youtube": {
+      "description": "Fetch YouTube video transcript for summarization",
+      "prompt": "Run node scripts/youtube-transcript.mjs <youtube-url> to get the transcript"
+    }
+  }
+}

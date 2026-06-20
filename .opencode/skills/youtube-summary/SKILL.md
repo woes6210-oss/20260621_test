@@ -1,24 +1,20 @@
 ---
 name: youtube-summary
-description: Fetch YouTube video transcripts and generate summaries
+description: Fetch YouTube video transcripts using the youtube-transcript script and generate summaries
 metadata:
   audience: general
 ---
 
-## Capabilities
-- Retrieve YouTube video metadata (title, description, duration)
-- Extract video captions/transcripts using webfetch
-- Generate concise summaries of video content
-- Support multiple languages if captions are available
+## Available tool
 
-## Usage
-When asked to summarize a YouTube video:
-1. Extract the video ID from the YouTube URL
-2. Use `webfetch` to get video page metadata
-3. Fetch the transcript from YouTube's caption endpoint
-4. Summarize the transcript into key points
-5. Return: title, duration, key topics, and bullet-point summary
+### YouTube transcript script
+Run the youtube-transcript script to fetch a video's captions:
+```
+node scripts/youtube-transcript.mjs <youtube-url>
+```
 
-## Transcript URL format
-- Auto-generated captions: `https://youtubetranscript.com/?v={videoId}`
-- Manual captions: fall back to parsing video page data
+## Workflow
+1. Extract video ID from the YouTube URL
+2. Run `node scripts/youtube-transcript.mjs <url>` to get the transcript
+3. Summarize the transcript into key bullet points
+4. Return: title (from video page), key topics, and summary
