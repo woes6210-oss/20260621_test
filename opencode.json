@@ -9,6 +9,10 @@
     "youtube": {
       "description": "Fetch YouTube video transcript for summarization",
       "prompt": "Run node scripts/youtube-transcript.mjs <youtube-url> to get the transcript"
+    },
+    "ytmp3": {
+      "description": "Download YouTube video audio as MP3",
+      "prompt": "Run python scripts/youtube-to-mp3.py <youtube-url> (requires .venv activation)"
     }
   }
 }

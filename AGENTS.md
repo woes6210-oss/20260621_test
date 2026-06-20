@@ -19,3 +19,4 @@
 ## Available Commands
 - `/scrape <url>` - Scrape a web page
 - `/youtube <url>` - Get YouTube transcript (CC/subtitles)
+- `/ytmp3 <url>` - Download YouTube video audio as MP3
