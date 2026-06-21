@@ -4,15 +4,15 @@
   "command": {
     "scrape": {
       "description": "Scrape a web page and extract clean text content",
-      "prompt": "Run node scripts/web-scrape.mjs <url> to scrape the given URL"
+      "prompt": "Run node .opencode/skills/web-scraper/web-scrape.mjs <url> to scrape the given URL"
     },
     "youtube": {
       "description": "Fetch YouTube video transcript for summarization",
-      "prompt": "Run node scripts/youtube-transcript.mjs <youtube-url> to get the transcript"
+      "prompt": "Run node .opencode/skills/youtube-summary/youtube-transcript.mjs <youtube-url> to get the transcript"
     },
     "ytmp3": {
       "description": "Download YouTube video audio as MP3",
-      "prompt": "Run python scripts/youtube-to-mp3.py <youtube-url> (requires .venv activation)"
+      "prompt": "Run python .opencode/skills/youtube-mp3/youtube-to-mp3.py <youtube-url> (requires .venv activation)"
     }
   }
 }

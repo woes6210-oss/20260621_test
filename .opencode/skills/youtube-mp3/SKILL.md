@@ -7,9 +7,8 @@ metadata:
 
 ## Available tool
 
-Run the youtube-to-mp3 script to download a video's audio as MP3:
 ```
-python scripts/youtube-to-mp3.py <youtube-url>
+python .opencode/skills/youtube-mp3/youtube-to-mp3.py <youtube-url>
 ```
 
 MP3 files are saved to the `results/` directory.

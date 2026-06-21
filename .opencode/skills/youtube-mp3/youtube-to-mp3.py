@@ -1,7 +1,7 @@
 import sys, os, subprocess
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(__file__).resolve().parent.parent.parent
 FFMPEG = str(ROOT / "tools" / "ffmpeg" / "ffmpeg.exe")
 OUTPUT = ROOT / "results"
 

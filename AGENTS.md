@@ -1,5 +1,9 @@
 # Project Memory
 
+## Convention
+Skill-specific scripts → inside `.opencode/skills/<skill-name>/`
+Shared/common tools → `tools/` or `scripts/`
+
 ## Python Virtual Environment
 - Location: `.venv/`
 - Activate: `.venv\Scripts\Activate.ps1` (PowerShell) or `.venv\Scripts\activate.bat` (cmd)
@@ -10,11 +14,12 @@
 | Path        | Git | Purpose                     |
 |-------------|-----|-----------------------------|
 | `src/`      | yes | Source code                 |
-| `scripts/`  | yes | Utility scripts             |
-| `.opencode/`| yes | opencode configuration      |
+| `scripts/`  | yes | Shared scripts              |
+| `.opencode/skills/` | yes | Each skill has own subdir with SKILL.md + its scripts |
 | `tmp/`      | no  | Temporary build artifacts   |
 | `results/`  | no  | Output results              |
 | `materials/`| no  | Input materials             |
+| `tools/`    | no  | Shared large binaries (ffmpeg, etc.) |
 
 ## Available Commands
 - `/scrape <url>` - Scrape a web page
